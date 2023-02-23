@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a:link, a:visited{
+    text-decoration: none;
+
+}
+.container{
+    width: 1100px;
+    margin: 0 auto;
+}
+.row, .row::after, .row::before{
+    clear: both;
+    display: table;
+    width: 100%;
+}
+/*.col-3, .col-6, .col-9, .col-12{
+    float: left;
+    padding: 0 15px;
+}*/
+[class ^= 'col-']{
+    float: left;
+    padding: 0 15px;   
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.col-2{
+    width:calc(100% * 2 / 12)
+}
+.col-3{
+    width: calc(100% * 3 / 12);
+}
+
+.col-5{
+    width:calc(100% * 5 / 12)
+}
+.col-6{
+    width: calc(100% * 6 / 12);
+}
+.col-9{
+    width: calc(100% * 9 / 12);
+}
+.col-12{
+    width: calc(100% * 12 / 12);
+}
+.mb-70{                          
+	margin-bottom: 70px;
+}
+.mb-80{
+	margin-bottom: 80px;
+}
+.px-30{
+	padding: 0 30px;
+}
